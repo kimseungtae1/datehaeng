@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.button{
+  cursor: pointer;
+  padding: .8em 2em;
+  box-sizing: border-box;
+    
+  position: relative;
+  overflow: hidden;
+  
+  font-family: inherit;
+  font-size: 15px;
+  color: #fff;
+  
+  text-transform: uppercase;
+	letter-spacing: .5px;  
+  
+  outline: none;
+  border: none;
+  background-color: #f15959;
+  border-radius: 5px;
+}
+
+.button:before{
+  content: "";
+  background-color: #448AFF;
+  position: absolute;
+}
+
+.button__label{
+  position: relative;
+  z-index: 2;
+}
+
+/* effect 1 */
+
+.button_type1:before{
+  width: 200%;
+  height: 150%;
+
+  opacity: 0;
+  left: -50%;
+  bottom: 0;
+ 
+  transform-origin: left bottom;
+  transform: rotate(-90deg) translateZ(0);
+  transition: transform 3s cubic-bezier(0.01,-0.24, 0, 0.68), opacity 3s cubic-bezier(0.01,-0.24, 0, 0.68);
+}
+
+.button_type1:hover:before, .button_type1:focus:before{
+  transform: rotate(0deg) translateZ(0);
+  opacity: 1;
+  transition-duration: .6s, .6s;
+}

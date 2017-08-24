@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* slideShow.css  */
+/***********첫번째 슬라이드쇼***********/
+#slideShow {
+	background-image:url(../images/sub02_slide_bg.gif);background-repeat:no-repeat; background-size:100% 100%;
+	height:900px;
+	line-height:900px;
+}	
+
+#slideShowBox  {
+	margin:0 auto;
+    overflow:hidden;
+    position:relative;           
+    width:1900px; 
+	height:900px;
+}
+   
+#slidePanel{
+	width:9500px;
+	position:absolute;
+}
+.slideImage{
+	float:left;
+	width:1900x;
+	height:900px;
+}
+#prevNextButtonBox{position:relative;}
+#prevButton{position:absolute; top:600px; left:40px;}
+#nextButton{position:absolute; top:600px; left:1800px;}

@@ -1,0 +1,55 @@
+
+body {
+  text-align: center;}
+
+
+.effect {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  text-align:center;
+  color: #fff;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  padding: 20px 0px;
+  width: 120px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #de7131;
+}
+
+.effect.effect-1 {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+.effect.effect-1:before {
+	content: "→";
+  font-family: FontAwesome;
+  font-size: 15px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  height: 100%;
+  width: 40px;
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+.effect.effect-1:hover {
+  text-indent: -20px;
+}
+.effect.effect-1:hover:before {
+  opacity: 1;
+  text-indent: 0px;
+}
+
